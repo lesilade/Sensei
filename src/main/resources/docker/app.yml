@@ -1,0 +1,14 @@
+version: '2'
+services:
+    sensei-app:
+        image: sensei
+        environment:
+            - SPRING_PROFILES_ACTIVE=dev
+            #- SPRING_DATASOURCE_URL=jdbc:mysql://sensei-mysql:3306/sensei?useUnicode=true&characterEncoding=utf8&useSSL=false
+           # - JHIPSTER_SLEEP=15 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+   # sensei-mysql:
+   #    extends:
+     #       file: mysql.yml
+      #      service: sensei-mysql
